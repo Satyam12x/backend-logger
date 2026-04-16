@@ -1,0 +1,61 @@
+{
+  "name": "req-log",
+  "version": "0.2.0",
+  "description": "A powerful, customizable, zero-config request logger middleware for Express. Structured logs, colored output, file transport, redaction, and full TypeScript support.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "prepublishOnly": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [
+    "express",
+    "middleware",
+    "logger",
+    "request-logger",
+    "http-logger",
+    "logging",
+    "typescript",
+    "structured-logging",
+    "json-logs",
+    "redaction"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Satyam12x/req-log.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Satyam12x/req-log/issues"
+  },
+  "homepage": "https://github.com/Satyam12x/req-log#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "peerDependencies": {
+    "express": ">=4.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.5.2",
+    "@types/supertest": "^6.0.3",
+    "@vitest/coverage-v8": "^2.1.9",
+    "express": "^5.2.1",
+    "rimraf": "^6.1.3",
+    "supertest": "^7.2.2",
+    "typescript": "^6.0.2",
+    "vitest": "^2.1.9"
+  }
+}
