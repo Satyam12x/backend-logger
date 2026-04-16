@@ -1,5 +1,5 @@
 {
-  "name": "req-log",
+  "name": "backend-logger",
   "version": "0.2.0",
   "description": "A powerful, customizable, zero-config request logger middleware for Express. Structured logs, colored output, file transport, redaction, and full TypeScript support.",
   "main": "dist/index.js",

@@ -1,6 +1,6 @@
-# req-log
+# backend-logger
 
-[![npm version](https://img.shields.io/npm/v/req-log.svg?style=flat-square)](https://www.npmjs.com/package/req-log)
+[![npm version](https://img.shields.io/npm/v/backend-logger.svg?style=flat-square)](https://www.npmjs.com/package/backend-logger)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg?style=flat-square)](https://www.typescriptlang.org/)
 
@@ -25,7 +25,7 @@ Reading left to right: the time, the request method, the URL, the response statu
 ## Install
 
 ```bash
-npm install req-log
+npm install backend-logger
 ```
 
 ---
@@ -36,7 +36,7 @@ Just add **one line** to your Express app:
 
 ```js
 const express = require('express');
-const { requestLogger } = require('req-log');
+const { requestLogger } = require('backend-logger');
 
 const app = express();
 
@@ -264,7 +264,7 @@ app.use(requestLogger({
 Works out of the box. All types are exported:
 
 ```ts
-import { requestLogger, LoggerOptions, LogField } from 'req-log';
+import { requestLogger, LoggerOptions, LogField } from 'backend-logger';
 ```
 
 ---
